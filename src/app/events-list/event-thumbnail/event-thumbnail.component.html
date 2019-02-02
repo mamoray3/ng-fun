@@ -1,5 +1,5 @@
-<div class="well hoverwell thumbnail">
-  <h2 [routerLink]="['/events',event.id]">{{event?.name}}</h2>
+<div class="well hoverwell thumbnail" [routerLink]="['/events',event.id]">
+  <h2 >{{event?.name}}</h2>
   <div> Date: {{event?.date}}</div>
   <div  [ngClass]="{green: event.time === '8:00 am', bold: event.time === '8:00 am'}" [ngSwitch]="event?.time"> Time: {{event?.time}}
     <span *ngSwitchCase="'8:00 am'">(Early Start)</span>
