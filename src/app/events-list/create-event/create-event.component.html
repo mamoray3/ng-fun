@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1"> Name: </div>
+    <div class="col-sm-2"> <input type="text" name="eventName"> </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-1"> Date: </div>
+    <div class="col-sm-2"> <input type="text" name="eventDate"> </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-1"> Price: </div>
+    <div class="col-sm-2"> <input type="text" name="price"> </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-1"> Street: </div>
+    <div class="col-sm-2"> <input type="text" name="street"> </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-1"> County: </div>
+    <div class="col-sm-2"> <input type="text" name="county"> </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-1">
+      <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+    <div class="col-sm-1">
+      <!--
+      <a class="btn btn-primary" [routerLink]="['/events']">Cancel</a>
+      <button type="button"   (click)="onCancel()" class="btn btn-primary">Cancel</button>-->
+      <button type="button"   [routerLink]="['/events']" class="btn btn-primary">Cancel</button>
+    </div>
+  </div>
+
+</div>
